@@ -1,0 +1,46 @@
+.background-img {
+  background-color: blanchedalmond;
+  background-image: url("../../../images/alex-wong-17997.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.center-box {
+  position: absolute;
+  height: 40%;
+  top: 40vh;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.white-box {
+  background-color: antiquewhite;
+  width: 20em;
+  margin: 10em;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
