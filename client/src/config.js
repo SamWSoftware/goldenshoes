@@ -1,18 +1,18 @@
 export const categories = {
     women: [
-      { name: "All", link: "/womens" },
-      { name: "Heels", link: "/womens/heels" },
-      { name: "Boots", link: "/womens/boots" },
-      { name: "Trainers", link: "/womens/trainer" },
-      { name: "Shoes", link: "/womens/shoes" },
-      { name: "Sandals and Flip Flops", link: "/womens/sandals" }
+      { name: "All", link: "/products/womens" },
+      { name: "Heels", link: "/products/womens/heels" },
+      { name: "Boots", link: "/products/womens/boots" },
+      { name: "Trainers", link: "/products/womens/trainer" },
+      { name: "Shoes", link: "/products/womens/shoes" },
+      { name: "Sandals and Flip Flops", link: "/products/womens/sandals" }
     ],
     men: [
-      { name: "All", link: "/mens" },
-      { name: "Boots", link: "/mens/boots" },
-      { name: "Trainers", link: "/mens/trainer" },
-      { name: "Shoes", link: "/mens/shoes" },
-      { name: "Sandals and Flip Flops", link: "/mens/sandals" }
+      { name: "All", link: "/products/mens" },
+      { name: "Boots", link: "/products/mens/boots" },
+      { name: "Trainers", link: "/products/mens/trainer" },
+      { name: "Shoes", link: "/products/mens/shoes" },
+      { name: "Sandals and Flip Flops", link: "/products/mens/sandals" }
     ]
   },
   age = 5;

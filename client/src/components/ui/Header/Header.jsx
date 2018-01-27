@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import { categories } from "../../config.js";
+import "./Header.css";
 
-import SubHeader from "./SubHeader";
-import Logo from "./Logo";
+import { categories } from "../../../config.js";
+
+import SubHeader from "../SubHeader/SubHeader";
+import Logo from "../Logo/Logo";
 
 class Header extends Component {
   constructor(props) {
@@ -16,9 +18,7 @@ class Header extends Component {
   renderContent() {
     return [
       <li key="account" style={{ margin: "0 10px" }}>
-        <Link onClick={() => this.activeGender("")} to="/account">
-          ACCOUNT
-        </Link>
+        <a href="/auth/google">Account</a>
       </li>,
       <li key="likes" style={{ margin: "0 10px" }}>
         <Link onClick={() => this.activeGender("")} to="/likes">

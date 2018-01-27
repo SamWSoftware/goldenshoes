@@ -10,12 +10,12 @@ const Landing = () => {
           <h1>Where will your shoes take you?</h1>
         </div>
         <div className="flexCenter">
-          <Link className="white-box" to="./women">
+          <Link className="white-box" to="./products/womens">
             <h4>
               <strong>SHOP WOMEN</strong>
             </h4>
           </Link>
-          <Link className="white-box" to="./men">
+          <Link className="white-box" to="./products/mens">
             <h4>
               <strong>SHOP MEN</strong>
             </h4>
