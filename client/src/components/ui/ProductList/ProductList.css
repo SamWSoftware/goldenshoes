@@ -1,0 +1,9 @@
+.ListContainer {
+  width: 90%;
+}
+
+@media (min-width: 1400px) {
+  .ListContainer {
+    width: 1300px;
+  }
+}

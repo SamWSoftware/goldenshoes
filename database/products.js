@@ -1,10 +1,12 @@
 module.exports = [
   {
-    images: ["heres the image"],
+    images: [
+      "http://images.asos-media.com/products/fred-perry-spencer-leather-trainer/9027864-1-white?$XXL$&wid=513&fit=constrain"
+    ],
     title: "Fred Perry Specer Leather Trainer",
     price: 75,
     brand: "Fred Perry",
-    gender: "women",
+    gender: "womens",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -24,11 +26,13 @@ module.exports = [
     ]
   },
   {
-    images: ["heres the image"],
+    images: [
+      "http://images.asos-media.com/products/fred-perry-b72-lace-up-trainer-with-perforated-detail/9027860-1-white?$XXL$&wid=513&fit=constrain"
+    ],
     title: "Fred Perry B72 lace ups",
     price: 60,
     brand: "Fred Perry",
-    gender: "women",
+    gender: "womens",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -48,11 +52,13 @@ module.exports = [
     ]
   },
   {
-    images: ["heres the image"],
+    images: [
+      "http://images.asos-media.com/products/forever-new-stiletto-ankle-boot/8961546-1-red?$XXL$&wid=513&fit=constrain"
+    ],
     title: "Forever New Stiletto Ankle Boot",
     price: 45,
     brand: "Forever New",
-    gender: "women",
+    gender: "womens",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -72,11 +78,13 @@ module.exports = [
     ]
   },
   {
-    images: ["heres the image"],
+    images: [
+      "http://images.asos-media.com/products/gestuz-denim-flat-slingback-shoe/9417550-1-azulblue?$XXL$&wid=513&fit=constrain"
+    ],
     title: "Gestuz Denim Flat Slingback Shoe",
     price: 150,
     brand: "Gestuz",
-    gender: "women",
+    gender: "womens",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -100,7 +108,7 @@ module.exports = [
     title: "Nike Balances",
     price: 90,
     brand: "Nike",
-    gender: "men",
+    gender: "mens",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -120,11 +128,13 @@ module.exports = [
     ]
   },
   {
-    images: ["heres the image"],
+    images: [
+      "http://images.asos-media.com/products/fred-perry-bowling-shoe/8508005-1-multi?$XXL$&wid=513&fit=constrain"
+    ],
     title: "Fred Perry Bowling Shoe",
     price: 48,
     brand: "Fred Perry",
-    gender: "women",
+    gender: "womens",
     description: [
       "Branded detailing",
       "Lace-up fastening",

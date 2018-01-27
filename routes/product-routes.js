@@ -4,7 +4,7 @@ const Path = require("path-parser");
 const Product = mongoose.model("Product");
 
 module.exports = app => {
-  app.get("/products/search/v1", async (req, res) => {
+  app.get("/api/products/search/v1", async (req, res) => {
     let queryLength = Object.keys(req.query).length;
     if (queryLength === 0) {
       let products = await Product.find({});

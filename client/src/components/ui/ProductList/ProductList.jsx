@@ -1,10 +1,16 @@
 import React from "react";
+import "./ProductList.css";
 
-const ProductList = ({ products }) => {
+import ProductPreview from "../ProductPreview/ProductPreview";
+
+const ProductList = ({ products = [] }) => {
+  console.log(products);
   return (
-    <div>
+    <div className="row ListContainer">
       {products.map((product, key) => (
-        <ProductPreview key={"item" + key} product={product} />
+        <div className="col m3 s6">
+          <ProductPreview key={"item" + key} product={product} />
+        </div>
       ))}
     </div>
   );
