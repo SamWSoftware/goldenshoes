@@ -4,7 +4,6 @@ import "./ProductList.css";
 import ProductPreview from "../ProductPreview/ProductPreview";
 
 const ProductList = ({ products = "loading" }) => {
-  console.log(products);
   return (
     <div className="row ListContainer">
       <h5>
@@ -14,7 +13,7 @@ const ProductList = ({ products = "loading" }) => {
       </h5>
       {products !== "loading"
         ? products.map((product, key) => (
-            <div className="col m3 s6">
+            <div key={"item" + key} className="col m3 s6">
               <ProductPreview key={"item" + key} product={product} />
             </div>
           ))

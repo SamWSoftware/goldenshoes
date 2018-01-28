@@ -1,0 +1,9 @@
+.myContainer {
+  width: 90%;
+}
+
+@media (min-width: 1400px) {
+  .myContainer {
+    width: 1300px;
+  }
+}
