@@ -15,7 +15,12 @@ class Catalogue extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props);
     this.props.fetchProducts(this.props.match.params);
+  }
+
+  componentWillReceiveProps() {
+    console.log(this.props);
   }
 
   render() {

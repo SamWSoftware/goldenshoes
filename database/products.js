@@ -7,6 +7,7 @@ module.exports = [
     price: 75,
     brand: "Fred Perry",
     gender: "womens",
+    category: "trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -33,6 +34,7 @@ module.exports = [
     price: 60,
     brand: "Fred Perry",
     gender: "womens",
+    category: "trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -59,6 +61,7 @@ module.exports = [
     price: 45,
     brand: "Forever New",
     gender: "womens",
+    category: "heels",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -85,6 +88,7 @@ module.exports = [
     price: 150,
     brand: "Gestuz",
     gender: "womens",
+    category: "flats",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -109,6 +113,7 @@ module.exports = [
     price: 90,
     brand: "Nike",
     gender: "mens",
+    category: "trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -135,6 +140,7 @@ module.exports = [
     price: 48,
     brand: "Fred Perry",
     gender: "womens",
+    category: "flats",
     description: [
       "Branded detailing",
       "Lace-up fastening",

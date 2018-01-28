@@ -57,7 +57,7 @@ class Header extends Component {
           <div className="nav-wrapper container">
             <ul>
               <li onClick={() => this.activeGender("")}>
-                <Logo logo="GoldenShoes" to="./" />
+                <Logo logo="GoldenShoes" to="/" />
               </li>
               <li
                 className="womenTab"

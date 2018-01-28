@@ -4,7 +4,7 @@ export const categories = {
       { name: "Heels", link: "/products/womens/heels" },
       { name: "Boots", link: "/products/womens/boots" },
       { name: "Trainers", link: "/products/womens/trainer" },
-      { name: "Shoes", link: "/products/womens/shoes" },
+      { name: "Flats", link: "/products/womens/flats" },
       { name: "Sandals and Flip Flops", link: "/products/womens/sandals" }
     ],
     men: [
