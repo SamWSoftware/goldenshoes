@@ -8,7 +8,7 @@ const passport = require("passport");
 const keys = require("./config/keys");
 
 // Models
-require("./models/user");
+require("./models");
 
 mongoose.connect(keys.mongoURI);
 
@@ -16,18 +16,20 @@ const app = express();
 
 app.use(bodyParser.json());
 
+/*
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
     keys: [keys.cookieKey]
   })
 );
+*/
 app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/auth-routes")(app);
 // require("./routes/billing-routes")(app);
-// require("./routes/product-routes")(app);
+require("./routes/product-routes")(app);
 
 if (process.env.NODE_ENV === "production") {
   // express serves production assets

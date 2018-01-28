@@ -16,7 +16,7 @@ export const addToBasket = (values, history) => async dispatch => {
   dispatch({ type: FETCH_USER, payload: res.data });
 };
 
-export const fetchProducts = () => async dispatch => {
-  const res = await axios.get("/api/products");
+export const fetchProducts = filter => async dispatch => {
+  const res = await axios.get("/api/products/search/v1", { params: filter });
   dispatch({ type: FETCH_PRODUCTS, payload: res.data });
 };
