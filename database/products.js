@@ -108,8 +108,10 @@ module.exports = [
     ]
   },
   {
-    images: ["heres the image"],
-    title: "Nike Balances",
+    images: [
+      "http://images.asos-media.com/products/nike-air-max-thea-trainers-in-black-and-white/6397942-1-blacksummitwhite?$XXL$&wid=513&fit=constrain"
+    ],
+    title: "Nike Air Max Thea Trainer",
     price: 90,
     brand: "Nike",
     gender: "mens",

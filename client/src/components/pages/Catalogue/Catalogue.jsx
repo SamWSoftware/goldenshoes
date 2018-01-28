@@ -10,24 +10,47 @@ class Catalogue extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Bob McGuiness"
+      title: "Bob McGuiness",
+      gender: "",
+      category: ""
     };
   }
 
   componentDidMount() {
-    console.log(this.props);
     this.props.fetchProducts(this.props.match.params);
+    if (this.props.match.params.category) {
+      this.setState({
+        gender: this.props.match.params.gender,
+        category: this.props.match.params.category
+      });
+    } else {
+      this.setState({
+        gender: this.props.match.params.gender
+      });
+    }
   }
 
-  componentWillReceiveProps() {
-    console.log(this.props);
+  componentDidUpdate() {
+    let genderProp = this.props.match.params.gender,
+      catProp = this.props.match.params.category;
+    if (
+      // if the gender or category has changed
+      genderProp !== this.state.gender ||
+      catProp !== this.state.category
+    ) {
+      this.setState({
+        gender: genderProp,
+        category: catProp
+      });
+      this.props.fetchProducts(this.props.match.params);
+    }
   }
 
   render() {
     return (
       <div className="Catalogue">
         <h3>{this.state.title}</h3>
-        <FilterCriteria />
+        <FilterCriteria gender={this.props.match.params.gender} />
         <ProductList products={this.props.products.products} />
       </div>
     );
