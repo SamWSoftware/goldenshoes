@@ -1,18 +1,18 @@
 export const categories = {
     womens: [
-      { name: "All", link: "/products/womens" },
-      { name: "Heels", link: "/products/womens/heels" },
-      { name: "Boots", link: "/products/womens/boots" },
-      { name: "Trainers", link: "/products/womens/trainers" },
-      { name: "Flats", link: "/products/womens/flats" },
-      { name: "Sandals", link: "/products/womens/sandals" }
+      { name: "all", link: "/products/womens" },
+      { name: "heels", link: "/products/womens/heels" },
+      { name: "boots", link: "/products/womens/boots" },
+      { name: "trainers", link: "/products/womens/trainers" },
+      { name: "flats", link: "/products/womens/flats" },
+      { name: "sandals", link: "/products/womens/sandals" }
     ],
     mens: [
-      { name: "All", link: "/products/mens" },
-      { name: "Boots", link: "/products/mens/boots" },
-      { name: "Trainers", link: "/products/mens/trainers" },
-      { name: "Shoes", link: "/products/mens/shoes" },
-      { name: "Sandals", link: "/products/mens/sandals" }
+      { name: "all", link: "/products/mens" },
+      { name: "boots", link: "/products/mens/boots" },
+      { name: "trainers", link: "/products/mens/trainers" },
+      { name: "shoes", link: "/products/mens/shoes" },
+      { name: "sandals", link: "/products/mens/sandals" }
     ]
   },
   sizes = {
@@ -26,4 +26,16 @@ export const categories = {
   brand = {
     womens: ["Fred Perry", "Gestuz", "Forever New"],
     mens: ["Nike"]
+  },
+  filters = {
+    options: {
+      Category: {
+        womens: categories.womens.slice(1),
+        mens: categories.mens.slice(1)
+      },
+      Brand: brand,
+      Color: colors,
+      Size: sizes
+    },
+    names: ["category", "brand", "colors", "stock"]
   };
