@@ -7,7 +7,7 @@ const SubHeader = ({ gender, categories }) => (
     <div className="sub-nav nav-wrapper">
       <ul className="left">
         {categories[gender].map(({ name, link }, k) => (
-          <li>
+          <li key={k}>
             <Link to={link}>{name}</Link>
           </li>
         ))}

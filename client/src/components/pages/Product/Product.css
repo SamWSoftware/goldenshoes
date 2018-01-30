@@ -1,0 +1,26 @@
+.ProdImg {
+  width: 100%;
+}
+
+.ProdImgBox {
+  position: relative;
+  width: 60%;
+  padding: 10px;
+  float: left;
+}
+
+.smallContainer {
+  position: relative;
+  width: 60%;
+  left: 20%;
+}
+
+.flex {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.prodPage {
+  margin-top: 20px;
+}

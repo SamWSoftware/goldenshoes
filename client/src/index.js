@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
+import $ from "jquery";
+import "materialize-css/dist/js/materialize.min.js";
 
 import App from "./components/App";
 import reducers from "./reducers";
@@ -16,3 +18,7 @@ ReactDOM.render(
   </Provider>,
   document.querySelector("#root")
 );
+
+$(document).ready(function() {
+  $("select").material_select();
+});

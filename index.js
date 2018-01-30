@@ -10,7 +10,7 @@ const keys = require("./config/keys");
 // Models
 require("./models");
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongoURI); //.catch(err => mongoose.connect(keys.mongoURI));
 
 const app = express();
 

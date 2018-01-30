@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProductPreview.css";
 
-const ProductPreview = ({ key, product }) => {
+const ProductPreview = ({ product }) => {
   return (
     <Link to={"/product/" + product.title.split(" ").join("-")}>
       <img

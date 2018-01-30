@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import queryString from "query-string";
 
 import { fetchProducts } from "../../../actions/index";
 
@@ -10,19 +11,32 @@ class Catalogue extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Bob McGuiness"
+      gender: "",
+      search: ""
     };
   }
 
-  componentDidMount() {
-    this.props.fetchProducts(this.props.match.params);
+  componentDidUpdate() {
+    let genderProp = this.props.match.params.gender;
+    let search = queryString.parse(this.props.location.search);
+    if (
+      // if the gender or search has changed
+      genderProp !== this.state.gender ||
+      JSON.stringify(search) !== this.state.search
+    ) {
+      this.setState({
+        gender: genderProp,
+        search: JSON.stringify(search)
+      });
+      console.log("search for", { ...this.props.match.params, ...search });
+      this.props.fetchProducts({ ...this.props.match.params, ...search });
+    }
   }
 
   render() {
     return (
       <div className="Catalogue">
-        <h3>{this.state.title}</h3>
-        <FilterCriteria />
+        <FilterCriteria gender={this.props.match.params.gender} />
         <ProductList products={this.props.products.products} />
       </div>
     );

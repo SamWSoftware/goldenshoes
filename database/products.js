@@ -7,6 +7,7 @@ module.exports = [
     price: 75,
     brand: "Fred Perry",
     gender: "womens",
+    category: "trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -33,6 +34,7 @@ module.exports = [
     price: 60,
     brand: "Fred Perry",
     gender: "womens",
+    category: "trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -59,6 +61,7 @@ module.exports = [
     price: 45,
     brand: "Forever New",
     gender: "womens",
+    category: "heels",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -85,6 +88,7 @@ module.exports = [
     price: 150,
     brand: "Gestuz",
     gender: "womens",
+    category: "flats",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -104,11 +108,14 @@ module.exports = [
     ]
   },
   {
-    images: ["heres the image"],
-    title: "Nike Balances",
+    images: [
+      "http://images.asos-media.com/products/nike-air-max-thea-trainers-in-black-and-white/6397942-1-blacksummitwhite?$XXL$&wid=513&fit=constrain"
+    ],
+    title: "Nike Air Max Thea Trainer",
     price: 90,
     brand: "Nike",
     gender: "mens",
+    category: "trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -135,6 +142,7 @@ module.exports = [
     price: 48,
     brand: "Fred Perry",
     gender: "womens",
+    category: "flats",
     description: [
       "Branded detailing",
       "Lace-up fastening",

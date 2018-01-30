@@ -1,9 +1,65 @@
-import React, { Component } from "react";
+import React from "react";
+import { withRouter } from "react-router-dom";
 
-class FilterCriteria extends Component {
-  render() {
-    return <div>Filter Criteria</div>;
+import { filters } from "../../../config";
+import Select from "../Select/Select";
+import "./FilterCriteria.css";
+
+const FilterCriteria = ({ gender, history }) => {
+  return (
+    <div className="filterBox">
+      <form className="ListContainer row" id="filterForm">
+        {Object.entries(filters.options).map((choice, key) => (
+          <div className="col m3" key={key}>
+            <Select
+              title={choice[0]}
+              options={choice[1][gender]}
+              multiple={true}
+              placeholder={choice[0]}
+            />
+          </div>
+        ))}
+
+        <div
+          onClick={() => search(gender, history)}
+          className="waves-effect waves-light btn"
+        >
+          <i className="material-icons left">search</i>search
+        </div>
+      </form>
+    </div>
+  );
+};
+
+function search(gender, history) {
+  const form = document.querySelector("#filterForm");
+  if (form) {
+    let vals = Array.from(form.elements)
+      .filter(el => el.classList[0] === "select-dropdown")
+      .map(el => el.value);
+    let queryString = valsToQuery(vals);
+    if (queryString.length >= 1) {
+      console.log(`/products/${gender}${queryString}`);
+      history.push(`/products/${gender}${queryString}`);
+    }
   }
+  history.push(`/products/${gender}`);
 }
 
-export default FilterCriteria;
+function valsToQuery(vals) {
+  let titles = Object.keys(filters.options);
+  let query = [];
+  vals.forEach((v, i) => {
+    if (v === titles[i]) {
+      // Still default parameter
+    } else {
+      v
+        .split(", ")
+        .forEach(param => query.push(`${filters.names[i]}=${param}`));
+    }
+    return;
+  });
+  return query.length === 0 ? "" : "?" + query.join("&");
+}
+
+export default withRouter(FilterCriteria);

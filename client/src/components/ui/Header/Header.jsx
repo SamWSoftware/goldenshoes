@@ -38,10 +38,10 @@ class Header extends Component {
     let women = document.querySelector(".womenTab").classList;
     gender = this.state.gender === gender ? "" : gender;
     this.setState({ gender });
-    if (gender === "men") {
+    if (gender === "mens") {
       men.add("active");
       women.remove("active");
-    } else if (gender === "women") {
+    } else if (gender === "womens") {
       women.add("active");
       men.remove("active");
     } else {
@@ -57,15 +57,15 @@ class Header extends Component {
           <div className="nav-wrapper container">
             <ul>
               <li onClick={() => this.activeGender("")}>
-                <Logo logo="GoldenShoes" to="./" />
+                <Logo logo="GoldenShoes" to="/" />
               </li>
               <li
                 className="womenTab"
-                onClick={() => this.activeGender("women")}
+                onClick={() => this.activeGender("womens")}
               >
                 <a>WOMEN</a>
               </li>
-              <li className="menTab" onClick={() => this.activeGender("men")}>
+              <li className="menTab" onClick={() => this.activeGender("mens")}>
                 <a>MEN</a>
               </li>
             </ul>
