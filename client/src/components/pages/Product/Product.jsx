@@ -30,8 +30,8 @@ class Product extends Component {
           }
         ];
     return (
-      <div className="container">
-        <div class="flex">
+      <div className="smallContainer">
+        <div class="flex prodPage">
           <div className="ProdImgBox">
             <img
               className="ProdImg"
@@ -42,7 +42,7 @@ class Product extends Component {
           <ProductAside products={prod} />
         </div>
 
-        <ProductDescription />
+        <ProductDescription product={prod[0]} />
       </div>
     );
   }
