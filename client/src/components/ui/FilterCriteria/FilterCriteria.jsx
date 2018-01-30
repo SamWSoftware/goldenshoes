@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 
 import { filters } from "../../../config";
-import MultiSelect from "../MultiSelect/MultiSelect";
+import Select from "../Select/Select";
 import "./FilterCriteria.css";
 
 const FilterCriteria = ({ gender, history }) => {
@@ -10,11 +10,14 @@ const FilterCriteria = ({ gender, history }) => {
     <div className="filterBox">
       <form className="ListContainer row" id="filterForm">
         {Object.entries(filters.options).map((choice, key) => (
-          <MultiSelect
-            key={key}
-            title={choice[0]}
-            options={choice[1][gender]}
-          />
+          <div className="col m3" key={key}>
+            <Select
+              title={choice[0]}
+              options={choice[1][gender]}
+              multiple={true}
+              placeholder={choice[0]}
+            />
+          </div>
         ))}
 
         <div
