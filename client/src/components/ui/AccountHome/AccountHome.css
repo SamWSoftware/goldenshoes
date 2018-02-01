@@ -1,0 +1,9 @@
+.ActHompageImage {
+  height: 90vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.accountHomeContainer {
+  overflow: hidden;
+}

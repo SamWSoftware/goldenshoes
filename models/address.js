@@ -6,7 +6,7 @@ const addressSchema = new Schema({
   street: [String],
   city: String,
   postcode: String,
-  Coutry: { type: String, default: "United Kingdom" }
+  coutry: { type: String, default: "United Kingdom" }
 });
 
 mongoose.model("Address", addressSchema);
