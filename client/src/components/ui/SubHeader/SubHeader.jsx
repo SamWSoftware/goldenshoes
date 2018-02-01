@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./SubHeader.css";
 
 const SubHeader = ({ gender, categories }) => (
@@ -8,7 +7,7 @@ const SubHeader = ({ gender, categories }) => (
       <ul className="left">
         {categories[gender].map(({ name, link }, k) => (
           <li key={k}>
-            <Link to={link}>{name}</Link>
+            <a href={link}>{name}</a>
           </li>
         ))}
       </ul>

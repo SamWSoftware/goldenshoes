@@ -15,15 +15,21 @@ class Header extends Component {
     this.state = { gender: "" };
   }
 
+  loggedIn() {
+    switch (this.props.auth) {
+      case null:
+        return;
+      case false:
+        return <a href="/auth/google">Log In</a>;
+      default:
+        return <a href="/my-account">Account</a>;
+    }
+  }
+
   renderContent() {
     return [
       <li key="account" style={{ margin: "0 10px" }}>
-        <a href="/auth/google">Account</a>
-      </li>,
-      <li key="likes" style={{ margin: "0 10px" }}>
-        <Link onClick={() => this.activeGender("")} to="/likes">
-          LIKES
-        </Link>
+        {this.loggedIn()}
       </li>,
       <li key="baset" style={{ margin: "0 10px" }}>
         <Link onClick={() => this.activeGender("")} to="/basket">
@@ -50,6 +56,25 @@ class Header extends Component {
     }
   }
 
+  disableLink(e) {
+    e.preventDefault();
+  }
+
+  getLocations() {
+    return [
+      <li className="womenTab" onClick={() => this.activeGender("womens")}>
+        <Link to="" onClick={this.disableLink}>
+          WOMEN
+        </Link>
+      </li>,
+      <li className="menTab" onClick={() => this.activeGender("mens")}>
+        <Link to="" onClick={this.disableLink}>
+          MEN
+        </Link>
+      </li>
+    ];
+  }
+
   render() {
     return (
       <div>
@@ -59,15 +84,7 @@ class Header extends Component {
               <li onClick={() => this.activeGender("")}>
                 <Logo logo="GoldenShoes" to="/" />
               </li>
-              <li
-                className="womenTab"
-                onClick={() => this.activeGender("womens")}
-              >
-                <a>WOMEN</a>
-              </li>
-              <li className="menTab" onClick={() => this.activeGender("mens")}>
-                <a>MEN</a>
-              </li>
+              {this.getLocations()}
             </ul>
             <ul className="right">{this.renderContent()}</ul>
           </div>

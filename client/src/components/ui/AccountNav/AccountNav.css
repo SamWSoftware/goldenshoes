@@ -1,0 +1,19 @@
+.navSideBar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 300px;
+}
+
+.ActNavItem {
+  padding: 20px;
+  margin: 2px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+  .navSideBar {
+    width: 40%;
+  }
+}

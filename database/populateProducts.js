@@ -1,11 +1,5 @@
 module.exports.init = async function() {
-  const keys = require("../config/keys");
   const mongoose = require("mongoose");
-  require("../models/product");
-
-  mongoose.connect(keys.mongoURI);
-  mongoose.Promise = global.Promise;
-
   const Product = mongoose.model("Product");
   const products = require("./products");
 

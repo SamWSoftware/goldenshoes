@@ -13,8 +13,7 @@
     "client": "npm run start --prefix client",
     "populateDB": "node -e 'require(\"./database/init\").init()'",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -29,7 +28,7 @@
     "mongoose": "^4.13.1",
     "npm": "^5.6.0",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0",
+    "passport-google-oauth20": "1.0.0",
     "path-parser": "^3.0.1",
     "stripe": "^5.3.0"
   },
