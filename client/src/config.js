@@ -1,18 +1,18 @@
 export const categories = {
     womens: [
-      { name: "all", link: "/products/womens" },
-      { name: "heels", link: "/products/womens/heels" },
-      { name: "boots", link: "/products/womens/boots" },
-      { name: "trainers", link: "/products/womens/trainers" },
-      { name: "flats", link: "/products/womens/flats" },
-      { name: "sandals", link: "/products/womens/sandals" }
+      { name: "All", link: "/products/womens" },
+      { name: "Heels", link: "/products/womens?category=Heels" },
+      { name: "Boots", link: "/products/womens?category=Boots" },
+      { name: "Trainers", link: "/products/womens?category=Trainers" },
+      { name: "Flats", link: "/products/womens?category=Flats" },
+      { name: "Sandals", link: "/products/womens?category=Sandals" }
     ],
     mens: [
-      { name: "all", link: "/products/mens" },
-      { name: "boots", link: "/products/mens/boots" },
-      { name: "trainers", link: "/products/mens/trainers" },
-      { name: "shoes", link: "/products/mens/shoes" },
-      { name: "sandals", link: "/products/mens/sandals" }
+      { name: "All", link: "/products/mens" },
+      { name: "Boots", link: "/products/mens?category=Boots" },
+      { name: "Trainers", link: "/products/mens?category=Trainers" },
+      { name: "Shoes", link: "/products/mens?category=Shoes" },
+      { name: "Sandals", link: "/products/mens?category=Sandals" }
     ]
   },
   sizes = {
@@ -20,8 +20,8 @@ export const categories = {
     mens: [5, 6, 7, 8, 9, 10, 11, 12]
   },
   colors = {
-    womens: ["red", "blue", "white"],
-    mens: ["white", "grey/blue", "grey/red"]
+    womens: ["Red", "Blue", "White", "Red Blue"],
+    mens: ["White", "Grey Blue", "Grey Red"]
   },
   brand = {
     womens: ["Fred Perry", "Gestuz", "Forever New"],

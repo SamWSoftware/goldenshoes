@@ -1,5 +1,4 @@
 .background-img {
-  background-color: blanchedalmond;
   background-image: url("../../../images/alex-wong-17997.jpg");
   background-size: cover;
   background-position: center center;
@@ -11,16 +10,25 @@
 .center-box {
   position: absolute;
   height: 40%;
+  width: 100%;
   top: 40vh;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
 
+.hpTitle {
+  width: 70%;
+  margin-left: 15%;
+}
+
 .white-box {
   background-color: antiquewhite;
-  width: 20em;
-  margin: 10em;
+  padding: 0 5px;
+}
+
+h4.white-box {
+  padding: 10px 0;
 }
 
 .flexCenter {
@@ -43,4 +51,22 @@ a:hover {
 a:active {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 700px) {
+  .center-box {
+    top: 25vh;
+  }
+}
+
+@media (max-width: 350px) {
+  #hpTitle {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 380px) and (min-width: 351px) {
+  #hpTitle {
+    font-size: 4rem;
+  }
 }

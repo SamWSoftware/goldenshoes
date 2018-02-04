@@ -1,7 +1,7 @@
 .fullPage {
   position: absolute;
   top: 0;
-  height: 100vh;
+  height: 108vh;
   width: 100%;
   z-index: -1;
 }

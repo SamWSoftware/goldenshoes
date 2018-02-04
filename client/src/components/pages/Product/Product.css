@@ -24,3 +24,19 @@
 .prodPage {
   margin-top: 20px;
 }
+
+@media (max-width: 922px) {
+  .smallContainer {
+    width: 95%;
+    left: 2.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ProdImgBox {
+    width: 100%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}

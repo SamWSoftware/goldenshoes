@@ -17,3 +17,9 @@
     width: 40%;
   }
 }
+
+@media (max-width: 992px) {
+  .navSideBar {
+    width: 100%;
+  }
+}

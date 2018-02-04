@@ -1,8 +1,9 @@
 import React from "react";
+import "./ProductDescription.css";
 
 const ProductDescription = ({ product }) => {
   return (
-    <div className="row">
+    <div className="row" id="prodDesc">
       <div className="col m6">
         <h5>Description</h5>
         <ul>{product.description.map((des, k) => <li key={k}>{des}</li>)}</ul>

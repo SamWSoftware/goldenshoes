@@ -36,6 +36,9 @@ class ProductAside extends Component {
               placeholder="SIZE"
             />
           </div>
+          <a class="waves-effect waves-light btn">
+            <i class="material-icons right">shopping_basket</i>Add to Basket
+          </a>
         </div>
       </div>
     );
