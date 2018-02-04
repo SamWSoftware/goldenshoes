@@ -6,20 +6,24 @@ const Landing = () => {
   return (
     <div className="center background-img">
       <div className="center-box">
-        <div style={{ backgroundColor: "antiquewhite" }}>
-          <h1>Where will your shoes take you?</h1>
+        <div className="white-box hpTitle">
+          <h1 id="hpTitle">Where will your shoes take you?</h1>
         </div>
-        <div className="flexCenter">
-          <Link className="white-box" to="./products/womens">
-            <h4>
-              <strong>SHOP WOMEN</strong>
-            </h4>
-          </Link>
-          <Link className="white-box" to="./products/mens">
-            <h4>
-              <strong>SHOP MEN</strong>
-            </h4>
-          </Link>
+        <div className="row">
+          <div className="col l3 offset-l2 m5 offset-m1 s10 offset-s1">
+            <Link to="./products/womens">
+              <h4 className="white-box">
+                <strong>SHOP WOMEN</strong>
+              </h4>
+            </Link>
+          </div>
+          <div className="col l3 offset-l2 m5 offset-m0.5 s10 offset-s1">
+            <Link to="./products/mens">
+              <h4 className="white-box">
+                <strong>SHOP MEN</strong>
+              </h4>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

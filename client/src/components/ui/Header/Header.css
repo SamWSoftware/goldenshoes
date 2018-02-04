@@ -1,3 +1,19 @@
 nav {
   background-color: #ffd600;
 }
+
+.genderStyle {
+  font-size: 1.5em;
+}
+
+.mobile-logo {
+  float: left;
+  position: relative;
+  font-size: 24px;
+}
+
+@media (max-width: 356px) {
+  .mobile-logo {
+    font-size: 20px;
+  }
+}

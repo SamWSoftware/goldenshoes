@@ -7,7 +7,7 @@ module.exports = [
     price: 75,
     brand: "Fred Perry",
     gender: "womens",
-    category: "trainers",
+    category: "Trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -16,7 +16,7 @@ module.exports = [
       "Moulded tread"
     ],
     productCode: 1203879,
-    colors: ["white"],
+    colors: ["White"],
     stock: [
       { size: 3, stock: 3 },
       { size: 4, stock: 0 },
@@ -34,7 +34,7 @@ module.exports = [
     price: 60,
     brand: "Fred Perry",
     gender: "womens",
-    category: "trainers",
+    category: "Trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -43,7 +43,7 @@ module.exports = [
       "Moulded tread"
     ],
     productCode: 1234567,
-    colors: ["white"],
+    colors: ["White"],
     stock: [
       { size: 3, stock: 3 },
       { size: 4, stock: 0 },
@@ -61,7 +61,7 @@ module.exports = [
     price: 45,
     brand: "Forever New",
     gender: "womens",
-    category: "heels",
+    category: "Heels",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -70,7 +70,7 @@ module.exports = [
       "Moulded tread"
     ],
     productCode: 9876543,
-    colors: ["red"],
+    colors: ["Red"],
     stock: [
       { size: 3, stock: 3 },
       { size: 4, stock: 0 },
@@ -88,7 +88,7 @@ module.exports = [
     price: 150,
     brand: "Gestuz",
     gender: "womens",
-    category: "flats",
+    category: "Flats",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -97,7 +97,7 @@ module.exports = [
       "Moulded tread"
     ],
     productCode: 1209876,
-    colors: ["blue"],
+    colors: ["Blue"],
     stock: [
       { size: 3, stock: 3 },
       { size: 4, stock: 0 },
@@ -115,7 +115,7 @@ module.exports = [
     price: 90,
     brand: "Nike",
     gender: "mens",
-    category: "trainers",
+    category: "Trainers",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -124,7 +124,7 @@ module.exports = [
       "Moulded tread"
     ],
     productCode: 5761483,
-    colors: ["grey/blue", "grey/red"],
+    colors: ["Grey Blue", "Grey Red"],
     stock: [
       { size: 3, stock: 3 },
       { size: 4, stock: 0 },
@@ -142,7 +142,7 @@ module.exports = [
     price: 48,
     brand: "Fred Perry",
     gender: "womens",
-    category: "flats",
+    category: "Flats",
     description: [
       "Branded detailing",
       "Lace-up fastening",
@@ -151,7 +151,7 @@ module.exports = [
       "Moulded tread"
     ],
     productCode: 4567821,
-    colors: ["red/blue", "white", "red"],
+    colors: ["Red Blue", "White", "Red"],
     stock: [
       { size: 3, stock: 3 },
       { size: 4, stock: 0 },

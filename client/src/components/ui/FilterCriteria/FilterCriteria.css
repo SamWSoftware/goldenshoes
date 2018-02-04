@@ -2,3 +2,8 @@
   padding: 10px;
   background-color: #ccc;
 }
+
+#clearFilter {
+  margin-left: 20px;
+  color: white;
+}

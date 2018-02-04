@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const Path = require("path-parser");
 
 const Product = mongoose.model("Product");
 
@@ -24,6 +23,7 @@ module.exports = app => {
       }
       res.send(products);
     } else {
+      console.log(convertToAnd(req.query));
       let products = await Product.find(convertToAnd(req.query));
       res.send(products);
     }
@@ -33,8 +33,9 @@ module.exports = app => {
 function convertToAnd(query) {
   let q = Object.keys(query).map(param => {
     if (param === "stock") {
+      console.log(handleStock(query.stock));
       return handleStock(query.stock);
-    } else if (param === "colors" && typeof query.color !== "string") {
+    } else if (param === "colors" && typeof query.colors !== "string") {
       // an array of colors
       return handleColorsArray(query.colors);
     } else {

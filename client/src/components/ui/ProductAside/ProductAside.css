@@ -1,3 +1,11 @@
 .asideBox {
   width: 40%;
 }
+
+@media (max-width: 600px) {
+  .asideBox {
+    position: relative;
+    width: 80%;
+    left: 10%;
+  }
+}

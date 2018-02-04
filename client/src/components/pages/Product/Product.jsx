@@ -11,6 +11,9 @@ class Product extends Component {
   componentDidMount() {
     let title = this.props.match.params.name.replace(/-/gi, " ");
     this.props.fetchProducts({ title });
+    var x = window.matchMedia("(max-width: 600px)");
+    mediaWidth(x);
+    x.addListener(mediaWidth);
   }
   render() {
     let prod = this.props.products.retrieved
@@ -52,6 +55,14 @@ function mapStateToProps({ products }) {
   return {
     products
   };
+}
+
+function mediaWidth(x) {
+  if (x.matches) {
+    let prodDesc = document.querySelector("#prodDesc");
+    prodDesc.classList.remove("row");
+    prodDesc.classList.add("mob");
+  }
 }
 
 export default connect(mapStateToProps, { fetchProducts })(Product);
