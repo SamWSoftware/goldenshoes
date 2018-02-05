@@ -66,7 +66,7 @@ class Account extends Component {
             <div className="w75pc whiteBox">{this.displayInfo()}</div>
           </div>
         </div>
-        <div>{this.displayMobile()}</div>
+        <div className="hide-on-large-only">{this.displayMobile()}</div>
         <div className="lighten-2 grey fullPage" />
       </div>
     );
