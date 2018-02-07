@@ -7,7 +7,8 @@ module.exports = [
     items: [
       {
         productId: "5a6d25f5d5897e3aa7d6507e",
-        number: 2
+        number: 2,
+        size: 6
       }
     ],
     deliveryAddress: {
@@ -27,11 +28,13 @@ module.exports = [
     items: [
       {
         productId: "5a6d25f5d5897e3aa7d65081",
-        number: 2
+        number: 1,
+        size: 4
       },
       {
         productId: "5a6d25f5d5897e3aa7d65080",
-        number: 1
+        number: 1,
+        size: 4
       }
     ],
     deliveryAddress: {
