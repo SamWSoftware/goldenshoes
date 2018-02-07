@@ -10,7 +10,8 @@ const orderSchema = new Schema({
   items: [
     {
       productId: { type: mongoose.Schema.Types.ObjectId, ref: "Product" },
-      number: Number
+      number: Number,
+      size: Number
     }
   ],
   deliveryAddress: AddressSchema,
