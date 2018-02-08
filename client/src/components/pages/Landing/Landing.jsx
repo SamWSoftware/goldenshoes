@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./landing.css";
 
+import FBChatWidget from "../../ui/FBChatWidget/FBChatWidget";
+
 const Landing = () => {
   return (
     <div className="center background-img">
@@ -26,6 +28,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
+      <FBChatWidget pageName="Golden-Shoes-1889978104666329" />
     </div>
   );
 };
