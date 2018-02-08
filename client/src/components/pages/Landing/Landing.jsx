@@ -28,7 +28,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <FBChatWidget facebookPageName="Golden-Shoes-1889978104666329" />
+      <FBChatWidget pageName="Golden-Shoes-1889978104666329" />
     </div>
   );
 };
