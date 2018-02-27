@@ -30,7 +30,9 @@
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
-  <div id="root"></div>
+  <div id="root">
+    <!--     <div class="fb-customerchat" page_id="PAGE_ID"></div>
+ --></div>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -42,5 +44,26 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<!-- <script>
+
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: '163782057739992',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v2.12'
+    });
+  };
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+</script>
+ -->
 
 </html>
